@@ -7,7 +7,7 @@
 }
 
 body {
-	background-color: #f5f5f5;
+	background-color: #f1f1f1;
 	font-family: 'Lato', sans-serif;
 	color: #000;
 }
@@ -19,7 +19,6 @@ header {
 	top: 0;
 	z-index: 100;
 	box-shadow: 0 0 10px 0 rgba(0,0,0,0.40);
-	padding: 20px 0;
 }
 
 a {
@@ -61,11 +60,14 @@ button {
 	text-transform: uppercase;
 	font-family: 'Josefin Sans', sans-serif;
 	display: inline-block;
+	padding: 10px 15px;
 }
 
 .container {
-	width: 90%;
-	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .row {
@@ -74,8 +76,9 @@ button {
 
 .main-nav a {
 	display: block;
-		padding: 10px 0;
-
+	padding: 10px 15px;
+	font-size: 15px;
+	font-weight: 700;
 }
 
 .main-nav li {
@@ -87,7 +90,7 @@ button {
 } 
 
 .main-container {
-	padding-top: 214px;
+	padding-top: 150px;
 }
 
 .first-section {
@@ -120,11 +123,16 @@ button {
 
 	.main-nav ul li {
 		float: left;
-		margin-left: 20px;
 	}
 
 	.main-container {
-		padding-top: 83px;
+		padding-top: 60px;
+	}
+
+	.main-nav a {
+		display: block;
+		padding: 15px 10px;
+		font-size: 1.3em;
 	}
 }
 
