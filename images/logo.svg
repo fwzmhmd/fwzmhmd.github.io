@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="319px" height="141px" viewBox="0 0 319 141" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="262px" height="81px" viewBox="0 0 262 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
-    <title>FWZ</title>
+    <title>FWZ No shadow</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <text id="text-1" font-family="Monoton-Regular, Monoton" font-size="100" font-weight="normal" fill="#FFFFFF">
-            <tspan x="46.0634766" y="145">FWZ</tspan>
-        </text>
-        <filter x="-16.7%" y="-28.8%" width="133.3%" height="157.7%" filterUnits="objectBoundingBox" id="filter-2">
-            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
-        </filter>
-    </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="1">
-        <g id="Artboard" transform="translate(-21.000000, -34.000000)" fill="#FFFFFF">
-            <g id="FWZ">
-                <use filter="url(#filter-2)" xlink:href="#text-1"></use>
-                <use xlink:href="#text-1"></use>
-            </g>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-size="100" font-family="Monoton-Regular, Monoton" font-weight="normal">
+        <g id="Artboard" transform="translate(-50.000000, -64.000000)" fill="#FFFFFF">
+            <text id="FWZ-No-shadow">
+                <tspan x="46.0634766" y="145">FWZ</tspan>
+            </text>
         </g>
     </g>
 </svg>
