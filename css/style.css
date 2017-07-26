@@ -38,6 +38,10 @@ img {
 	display: block;
 }
 
+svg {
+	font-family: 'Monoton', cursive;
+}
+
 footer {
 	/* Main Footer BG: */
 	background: #424242;
