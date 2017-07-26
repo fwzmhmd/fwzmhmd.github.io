@@ -7,7 +7,7 @@
 }
 
 body {
-	background-color: #f1f1f1;
+	background-color: rgba(0,0,0,0.03);
 	font-family: 'Lato', sans-serif;
 	color: #000;
 }
@@ -35,6 +35,8 @@ li {
 
 img {
 	max-width: 100%;
+	display: block;
+	border-radius: 7px;
 }
 
 footer {
@@ -97,6 +99,17 @@ button {
 	background-color: #fff;
 }
 
+.main-img {
+	box-shadow: 0 0 30px 0 rgba(0,0,0,0.40);
+	border-radius: 8px;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+.col2 h1, .col2 p {
+	margin-bottom: 20px;
+}
+
 .something {
 	text-align: center;
 }
@@ -110,6 +123,10 @@ button {
 	background: #343434;
 	border: 1px solid #212121;
 	padding: 10px 0;
+}
+
+.first-section, .second-section {
+	text-align: center;
 }
 
 @media (min-width: 768px) {
