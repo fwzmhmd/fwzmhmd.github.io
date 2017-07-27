@@ -64,6 +64,8 @@ button {
 	cursor: pointer;
 }
 
+/* Header */
+
 .logo {
 	display: inline-block;
 	padding: 10px;
@@ -131,16 +133,42 @@ button {
 }
 
 .col2 button {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
+
+/* Tags container */
 
 .tags {
 	text-align: left;
 }
 
+.tags p {
+	font-size: 16px;
+	font-weight: 900;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+	color: rgba(0,0,0,.8);
+}
+
+.tag {
+	float: left;
+	border: 2px solid #FF408B;
+	padding: 5px 8px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.tag p {
+	margin-bottom: 0;
+	text-transform: uppercase;
+	color: #FF408B;	
+}
+
 .something {
 	text-align: center;
 }
+
+/* Footer */
 
 .main-footer {
 	padding: 20px 0;
@@ -158,7 +186,29 @@ button {
 	text-align: center;
 }
 
+/* Clearfix */
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/* Media queries */
+
 @media (min-width: 768px) {
+	.container {
+		padding: 0 100px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.header-container {
+		padding: 0 100px;
+		display: table;
+		width: 100%;
+	}
+
 	.logo {
 		float: left;
 	}
@@ -177,9 +227,34 @@ button {
 
 	.main-nav a {
 		display: block;
-		padding: 15px 10px;
-		font-size: 1.3em;
+		padding: 19.5px 10px;
+		padding-bottom: 19px;
+		font-size: 17px;
 	}
+
+	.active {
+		border-bottom: 2px solid deeppink;
+		padding-bottom: 1px;
+	}
+}
+
+@media (min-width: 1024px) {
+	/*.container {
+		padding: 0 60px;
+		margin-left: auto;
+		margin-right: auto;
+	}*/
+
+	.col1, .col2 {
+		width: 50%;
+		float: left;
+		padding: 0 15px;
+	}
+
+	.first-section, .second-section {
+		text-align: left;
+	}
+
 }
 
 
