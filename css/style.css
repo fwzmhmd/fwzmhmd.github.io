@@ -238,6 +238,7 @@ button a {
 
 	.nav {
 		float: right;
+		padding-right: 1em;
 	}
 
 	.nav a {
