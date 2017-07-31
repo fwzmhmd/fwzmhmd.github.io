@@ -81,6 +81,11 @@ footer li {
 	color: #787878;
 }
 
+i.fa.fa-heart {
+	color: red;
+	margin: 0 3px;
+}
+
 footer .col1,
 footer .col2 {
 	margin-bottom: 20px;
@@ -95,6 +100,7 @@ footer .col2 {
 .logo {
 	padding-left: 1em;
 	padding-right: 1em;
+	float: left;
 }
 
 .logo a {
@@ -103,6 +109,10 @@ footer .col2 {
 	padding: 5px;
 	line-height: 0;
 	margin: 5px 0;
+}
+
+.nav {
+	clear: both;
 }
 
 .nav a {
@@ -114,6 +124,21 @@ footer .col2 {
 
 .nav a:hover {
 	background-color: #f3f3f3;
+}
+
+.menu-btn {
+	float: left;
+	/*padding: 5px;*/
+	border: 1px solid #cfcfcf;
+	margin-top: 5px;
+	margin-right: 16px;
+}
+
+.menu-btn div {
+	width: 29px;
+	height: 3px;
+	background-color: #000;
+	margin: 8px 0;
 }
 
 /* Main content */
