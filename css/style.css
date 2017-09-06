@@ -9,9 +9,9 @@ Github: https://github.com/fwzmhmd
 
 ==============================*/
 
-/*********************
-	Base Styles
-*********************/
+/*===================
+	Default 
+====================*/
 
 * {
 	margin: 0;
@@ -22,188 +22,93 @@ Github: https://github.com/fwzmhmd
 }
 
 body {
-	background-color: rgba(0,0,0,0.05);
+	background-color: #201f1d;
 	font-family: 'Lato', sans-serif;
-	color: #000;
+	color: #e1e1e1;
 }
 
 ol, ul {
 	list-style-type: none;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+p {
+	margin-bottom: .9em;
+}
+
+/*===================
+	Header 
+====================*/
+
 header {
-	background-color: #fff;
-	width: 100%;
-	box-shadow: 0 0 32px rgba(0,0,0,0.15);
+	background-color: rgba(50,50,50,1);
+	box-shadow: 0 10px 30px rgba(0,0,0,.3);
 	position: fixed;
+	width: 100%;
 	top: 0;
 	z-index: 100;
 }
 
-img {
-	max-width: 100%;
-	margin: 0 auto;
+/* Header */
+
+header::after {
+	background: linear-gradient(to right, #08f4cb, #ff00a7);
+	width: 100%;
+	content: '';
+	position: absolute;
+	top: 50;
+	height: 2px;
+}
+
+/* Nav */
+
+nav ul li a {
 	display: block;
+	padding: 5px 1em;
 }
 
-a {
-	text-decoration: none;
-	color: #000;
-}
-
-/* Footer */
+/*===================
+	Footer 
+====================*/
 
 footer {
-	background-color: #181818;
-	text-transform: capitalize;
-}
-
-footer h2 {
-	font-size: 1.7em;
-	margin-bottom: 10px;
-	color: #ddd;
-}
-
-footer li {
-	font-size: 1.1em;
-	margin-bottom: 5px;
 }
 
 .main-footer {
-	color: #888;
-	font-weight: 500;
+	background-color: rgb(20,20,20);
+	padding: 20px 0;
 }
 
 .sub-footer {
-	background-color: #0b0b0b;
-	text-align: center;
-	padding: 15px 0;
-	color: #787878;
+	background-color: #0f0f0f;
 }
 
-i.fa.fa-heart {
-	color: red;
-	margin: 0 3px;
+.sub-footer p {
+	padding: 10px 0;
+	margin-bottom: -0px;
 }
 
-footer .col1,
-footer .col2 {
-	margin-bottom: 20px;
+/*===================
+	Components 
+====================*/
+
+/* Selection */
+
+::selection {
+	color: #08f4cb;
+	background-color: rgba(8,244,203,.25);
 }
 
-/* Header */
-
-.header-container {
-	width: 100%;
+::-moz-selection {
+	color: #08f4cb;
+	background-color: rgba(8,244,203,.25);
 }
 
-.logo {
-	padding-left: 1em;
-	padding-right: 1em;
-	float: left;
-}
-
-.logo a {
-	background-image: linear-gradient(-134deg, #FF0000 0%, #FF408B 100%);
-	display: inline-block;
-	padding: 5px;
-	line-height: 0;
-	margin: 5px 0;
-}
-
-.nav {
-	clear: both;
-}
-
-.nav a {
-	color: #000;
-	display: block;
-	padding: 10px 1em;
-	font-weight: 700;
-}
-
-.nav a:hover {
-	background-color: #f3f3f3;
-}
-
-.menu-btn {
-	float: left;
-	/*padding: 5px;*/
-	border: 1px solid #cfcfcf;
-	margin-top: 5px;
-	margin-right: 16px;
-}
-
-.menu-btn div {
-	width: 29px;
-	height: 3px;
-	background-color: #000;
-	margin: 8px 0;
-}
-
-/* Main content */
-
-.main-content .col1 img {
-	border-radius: 7px; 
-	box-shadow: 0 0 32px rgba(0,0,0,0.3);
-	margin-bottom: 10px;
-}
-
-h1.title {
-	font-size: 2em;
-	margin-bottom: 10px;
-	text-transform: capitalize;
-}
-
-p.content {
-	margin-bottom: 10px;
-	font-weight: 700;
-}
-
-.alt {
-	background-color: #fff;
-}
-
-button {
-	background-image: linear-gradient(-134deg, #FF0000 0%, #FF408B 100%);
-	border: none;
-	margin-bottom: 20px;
-}
-
-button a {
-	display: block;
-	padding: 8px 20px;
-	color: #fff;
-	letter-spacing: 1px;
-	font-size: 1.5em;
-	text-align: center;
-}
-
-/* Tags */
-
-.tags p {
-	text-transform: capitalize;
-	font-weight: 900;
-	margin-bottom: 10px;
-}
-
-.tags ul li {
-	float: left;
-	border: 2px solid #000;
-	padding: 5px 16px;
-	font-weight: 900;
-	text-transform: uppercase;
-	border-image: linear-gradient(-134deg, #FF0000 0%, #FF408B 100%);
-	border-image-slice: 1;
-	color: #FF0000;
-	margin-right: 5px;
-	margin-bottom: 5px;
-}
-
-.row {
-	padding: 20px 0;
-	width: 100%;
-}
+/* Main container */
 
 .container {
 	width: 100%;
@@ -211,79 +116,100 @@ button a {
 	padding-right: 1em;
 }
 
-.main-content {
-	padding-top: 167px;
+.main{
+	padding-top: 78px;
 }
 
-/* Clearfix */
-
-.clearfix {
-	display: table;
-	content: "";
-	clear: both;
+.preview {
+	position: relative;
+	margin-bottom: 20px;
 }
 
-@media (min-width: 768px) {
-	.container {
-		width: 70%;
-		margin: 0 auto;
-		max-width: 1000px;
-	}
-
-	.header-container {
-		width: 70%;
-		margin: 0 auto;
-		max-width: 1000px;
-		padding: 0 1em;
-	}
-
-	.main-content {
-		padding-top: 60px;
-	}
-
-	.main-content .col1,
-	.main-content .col2 {
-		width: 50%;
-		float: right;
-		padding: 0 1em;
-	}
-
-	.main-content .alt .col1,
-	.main-content .alt .col1 {
-		float: left;
-	}
-
-	.logo {
-		float: left;
-	}
-
-	.logo svg {
-		height: 40px;
-	}
-
-	.nav {
-		float: right;
-		padding-right: 1em;
-	}
-
-	.nav a {
-		padding: 17.5px 1em;
-		font-size: 1.3em;
-	}
-
-	.nav li {
-		float: left;
-	}
-
-	footer .col1,
-	footer .col2,
-	footer .col3 {
-		width: 33.3333%;
-		float: left;
-	}
-
-	.main-footer {
-		padding: 0 1em;
-	}
-	
+.preview p {
+	position: absolute;
+	top: 33.635px;
+	padding: 0 20px;
 }
+
+/* Button */
+
+.btn {
+	padding: 4px 14px;
+	border: 2px solid #08f4cb;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+	font-size: 14px;
+	text-decoration: none;
+	text-transform: uppercase;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.btn:hover {
+	background-color: rgba(8,244,203,.25);
+	transition: all .2s ease-in-out;
+}
+
+/* Higlights */
+
+.highlight {
+	color: #08f4cb;
+	background-color: rgba(8,244,203,.25);
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+/* Images */
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+
+.image-auto {
+	margin: 0 auto;
+	display: block;
+}
+
+.preview img {
+	max-width: 100%;
+	background-position: center center;
+	filter: blur(10px);
+}
+
+/* Panel */
+
+.panel {
+	background-color: rgba(50,50,50,0.4);
+	padding: 1.2em;
+	margin-bottom: 1em;
+}
+
+.panel-img,
+.panel-body {
+	margin-bottom: 1em;
+}
+
+.panel-img img {
+	border-radius: 6px;
+	box-shadow: 0 0 30px rgba(0,0,0,.3);
+}
+
+/* Text */
+
+.title {
+	font-size: 24px;
+	border-left: 2px solid #08f4cb;
+	padding-left: 8px;
+	margin-bottom: 1em;
+}
+
+.text-small {
+	font-size: 12px;
+}
+
+.text-center {
+	text-align: center;
+}
+
