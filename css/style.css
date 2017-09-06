@@ -60,7 +60,8 @@ header::after {
 	width: 100%;
 	content: '';
 	position: absolute;
-	top: 50;
+	bottom: 0;
+	left: 0;
 	height: 2px;
 }
 
@@ -95,6 +96,12 @@ footer {
 /*===================
 	Components 
 ====================*/
+
+.clearfix {
+	display: table;
+	content: '';
+	clear: both;
+}
 
 /* Selection */
 
@@ -213,3 +220,37 @@ footer {
 	text-align: center;
 }
 
+/*===================
+	Media Queries 
+====================*/
+
+/* 1024px */
+
+@media (min-width: 1024px) {
+	.container {
+		width: 70%;
+		margin: 0 auto;
+		max-width: 1000px;
+	}
+
+	.panel {
+		width: 30%;
+	}
+
+	.nav-logo {
+		float: left;
+	}
+
+	nav {
+		float: right;
+	}
+
+	nav ul li {
+		float: left;
+	}
+
+	.preview img {
+		height: 200px;
+		width: 100%;
+	}
+}
