@@ -144,7 +144,7 @@ footer {
 }
 
 .main{
-	padding-top: 142px;
+	padding-top: 140px;
 }
 
 .preview {
@@ -171,6 +171,7 @@ footer {
 	text-transform: uppercase;
 	vertical-align: middle;
 	display: inline-block;
+	margin-right: 2px;
 }
 
 .btn:hover {
