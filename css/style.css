@@ -228,6 +228,9 @@ footer {
 	background-color: rgba(50,50,50,0.4);
 	padding: 1.2em;
 	margin-bottom: 1em;
+	float: left;
+	margin-right: 20px;
+	width: 100%;
 }
 
 .panel-img,
@@ -238,6 +241,11 @@ footer {
 .panel-img img {
 	border-radius: 6px;
 	box-shadow: 0 0 30px rgba(0,0,0,.3);
+	height: 150px;
+}
+
+.panel-footer > .btn {
+	margin-bottom: 8px;
 }
 
 /* Text */
@@ -327,5 +335,9 @@ footer {
 
 	.preview p {
 		width: 70%;
+	}
+
+	.panel-body {
+		min-height: 110px;
 	}
 }
