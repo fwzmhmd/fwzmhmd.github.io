@@ -114,10 +114,7 @@ footer {
 }
 
 .main-footer {
-	
-	padding: 20px 0;
-
-	
+	padding: 20px 0;	
 }
 
 .sub-footer {
@@ -162,7 +159,7 @@ footer {
 }
 
 .main{
-	padding-top: 176px;
+	padding-top: 35px;
 	min-height: calc(100vh - 36px);
 }
 
