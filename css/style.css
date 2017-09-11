@@ -87,7 +87,7 @@ nav a:hover {
 /* Logo */
 
 .nav-logo {
-	padding: 8px 1em;
+	padding: 15px 1em;
 	width: 50%;
 	display: inline-block;
 }
@@ -95,13 +95,53 @@ nav a:hover {
 /* Dropdown */
 
 .nav-btn {
-	padding: 8px 1em;
+	padding-right: 1em;
 	float: right;
 	width: 50%;
 }
 
 .nav-btn button {
 	float: right;
+}
+
+.dropbtn {
+	float: right;
+	margin-top: 16.5px;
+	cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+	width: 24px;
+	height: 2px;
+	background-color: #fff;
+	transition: .4s;
+}
+
+.bar2 {
+	margin: 5px 0;
+}
+
+/* Transform */
+
+.transform .bar1 {
+	-webkit-transform: rotate(-315deg) translate(5px, 5px);
+	-ms-transform: rotate(-315deg) translate(5px, 5px);
+	-o-transform: rotate(-315deg) translate(5px, 5px);
+	transform: rotate(-315deg) translate(5px, 5px);
+}
+
+.transform .bar2 {
+	-webkit-transform: rotate(-225deg) translate(0px, 0px);
+	-ms-transform: rotate(-225deg) translate(0px, 0px);
+	-o-transform: rotate(-225deg) translate(0px, 0px);
+	transform: rotate(-225deg) translate(0px, 0px);
+}
+
+.transform .bar3 {
+	-webkit-transform: rotate(-315deg) translate(-5px, -5px);
+	-ms-transform: rotate(-315deg) translate(-5px, -5px);
+	-o-transform: rotate(-315deg) translate(-5px, -5px);
+	transform: rotate(-315deg) translate(-5px, -5px);
 }
 
 /*===================

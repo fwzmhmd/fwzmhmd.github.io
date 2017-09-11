@@ -11,5 +11,6 @@ $(document).ready(function() {
 	// Toggle for the dropdown
 	$(".dropbtn").click(function () {
 		$("nav").slideToggle();
+		$(this).toggleClass("transform");
 	});
 });
