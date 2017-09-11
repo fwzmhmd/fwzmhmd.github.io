@@ -148,7 +148,8 @@ footer {
 }
 
 .main{
-	padding-top: 140px;
+	padding-top: 176px;
+	min-height: calc(100vh - 36px);
 }
 
 .preview {
