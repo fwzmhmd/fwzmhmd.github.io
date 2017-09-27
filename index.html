@@ -1,104 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Fawaz's Portfolio</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600|Lato:300,400,700|Monoton" rel="stylesheet">
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<header>
-			<div class="header-container">
-				<div class="nav-logo">Fawaz</div>
-				<div class="nav-btn">
-					<div class="dropbtn">
-						<div class="bar1"></div>
-						<div class="bar2"></div>
-						<div class="bar3"></div>
-					</div>
-				</div>
-				<nav>
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Projects</a></li>
-						<li><a href="#">Contact</a></li>
-						<li><a href="https://github.com/fwzmhmd" target="_blank">Github</a></li>
-					</ul>
-				</nav>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Fawaz's Portfolio</title>
+	<link rel="shortcut icon" type="image/x-icon" href="icons/logo.png">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" href="css/font-awesome.css">
+</head>
+<body>
+	<header>
+		<div class="header-container">
+			<div class="nav-logo">
+				<img src="icons/logo.png" alt="">
 			</div>
-		</header>
-		<div class="main">
-			<div class="preview">
-				<div class="img-preview">
-				</div>
-				<div class="container">
-					<p>“The goal of a designer is to listen, observe, understand, sympathize, empathize, synthesize, and glean insights that enable him or her to make the invisible visible." <br> <span style="display: inline-block;margin-top: 5px;margin-left: 10px;">– <span class="highlight">Hillman Curtis</span></span></p>
+			<div class="nav-btn">
+				<div class="dropbtn">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
 				</div>
 			</div>
-			<div class="container clearfix" id="projects">
-				<h1 class="title">Projects</h1>
-				<div class="panel">
-					<div class="panel-img">
-						<img class="img-fluid image-auto" src="images/thumb3.png" alt="">
-					</div>
-					<div class="panel-body">
-						<h3>Weight Convertor</h3>
-						<p>Weight convertor made with JavaScript</p>
-					</div>
-					<div class="panel-footer">
-						<a href="weight-convertor/" target="_blank" class="btn">view</a>
-						<a href="https://github.com/fwzmhmd/weight-convertor/" target="_blank" class="btn">source</a>
-						<div class="text-small">Last Updated: 17 Sep 2017</div>
-					</div>
-				</div>
-				<div class="panel">
-					<div class="panel-img">
-						<img class="img-fluid image-auto" src="images/thumb1.png" alt="">
-					</div>
-					<div class="panel-body">
-						<h3>Tribute Page</h3>
-						<p>This page was created for a course to show how to work with Bootstrap framework</p>
-					</div>
-					<div class="panel-footer">
-						<a href="tribute-page/" target="_blank" class="btn">view</a>
-						<a href="https://github.com/fwzmhmd/tribute-page/" target="_blank" class="btn">source</a>
-						<div class="text-small">Last Updated: 9 Sep 2017</div>
-					</div>
-				</div>
-				<div class="panel">
-					<div class="panel-img">
-						<img class="img-fluid image-auto" src="images/thumb2.png" alt="">
-					</div>
-					<div class="panel-body">
-						<h3>Bmi Calculator</h3>
-						<p>Bmi calculator created in Javascript for a task</p>
-					</div>
-					<div class="panel-footer">
-						<a href="bmi/" target="_blank" class="btn">view</a>
-						<a href="https://github.com/fwzmhmd/bmi/" target="_blank" class="btn">source</a>
-						<div class="text-small">Last Updated: 9 Sep 2017</div>
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<h1 class="title">Contact</h1>
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#social">Social</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="preview" id="home">
+		<div class="container">
+			<div class="intro">
+				<div class="title">Fawaz Mohamed</div>
+				<p class="paragraph">Self taught Web Developer and Designer. Passionate about creating Web Applications with a Beautfiul UI &amp; UX. Love learning about new Technologies &amp; Development Techniques.</p>
 			</div>
 		</div>
-		<footer>
-			<!-- <div class="main-footer">
-				<div class="container">
-					foot goes in here
+	</div>
+
+	<div class="content" id="projects">
+		<div class="container">
+			<div class="title">Projects</div>
+			<div class="project-container clearfix">
+				<div class="project">
+					<div class="thumbnail">
+						<img src="images/weight_convertor.png" alt="">
+						<div class="name">Weight Convertor</div>
+					</div>
+					<a href="weight-convertor/" target="_blank" class="btn btn-view">
+						<i class="fa fa-home"></i>View</a>
+					<a href="https://github.com/fwzmhmd/weight-convertor/" target="_blank" class="btn btn-source">Source code</a>
 				</div>
-			</div> -->
-			<div class="sub-footer">
-				<div class="container clearfix">
-					<p class="text-small code">< > by Fawaz</p>
-					<p class="text-small copyright">&copy; 2017 - Fawaz Mohamed</p>
+				<div class="project">
+					<div class="thumbnail">
+						<img src="images/tribute.png" alt="">
+						<div class="name">Tribute Page</div>
+					</div>
+					<a href="tribute-page/" target="_blank" class="btn btn-view">View</a>
+					<a href="https://github.com/fwzmhmd/tribute-page/" target="_blank" class="btn btn-source">Source code</a>
 				</div>
+				<div class="project">
+					<div class="thumbnail">
+						<img src="images/bmi_calculator.png" alt="">
+						<div class="name">BMI Calculator</div>
+					</div>
+					<a href="bmi/" target="_blank" class="btn btn-view">View</a>
+					<a href="https://github.com/fwzmhmd/bmi/" target="_blank" class="btn btn-source">Source code</a>
+				</div>				
 			</div>
-		</footer>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="js/main.js"></script>
-	</body>
-</html>
+		</div>
+	</div>
+
+	<div class="contact" id="social">
+		<div class="container">
+			<div class="panel linkedin">
+				<div class="icon">
+					<img src="icons/linkedin.svg" alt="Email icon">
+				</div>
+				<div class="label">Connect on <br> <span> LinkedIn</span></div>
+				<a href="https://www.linkedin.com/in/fawazmhmd/"  target="_blank" class="btn btn-linkedin">Connect</a>
+			</div>
+			<div class="panel github">
+				<div class="icon">
+					<img src="icons/github.svg" alt="">
+				</div>
+				<div class="label">View my<br> <span> Github</span></div>
+				<a href="https://github.com/fwzmhmd" target="_blank" class="btn btn-github">Follow</a>
+			</div>
+			<div class="panel email">
+				<div class="icon">
+					<img src="icons/email.svg" alt="">
+				</div>
+				<div class="label">Send an<br> <span> Email</span></div>
+				<a href="mailto:fwz.mhmd@gmail.com" class="btn btn-email">Email</a>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container clearfix">
+			<div class="info">Designed &amp; Coded with <3 by Fawaz</div>
+			<div class="copyright">&copy; Copyright 2017 - Fawaz Mohamed</div>
+		</div>
+	</footer>
+
+	<script src="js/jquerymin.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
