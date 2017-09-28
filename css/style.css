@@ -23,7 +23,7 @@ Github: https://github.com/fwzmhmd
 
 body {
 	background-color: #f3f3f3;
-	font-family: Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
 }
 
@@ -245,7 +245,7 @@ nav a:hover {
 /* Preview */
 
 .preview {
-	background-image: url(../images/planet.jpg);
+	background-image: url(../images/pexels.jpeg);
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-attachment: fixed;
@@ -336,7 +336,7 @@ nav a:hover {
 /* Contact info */
 
 .contact {
-	background-image: url(../images/planet.jpg);
+	background-image: url(../images/desktop.jpg);
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-attachment: fixed;
