@@ -258,7 +258,7 @@ nav a:hover {
 .preview > .container > .intro {
 	background-color: rgba(0,0,0,.9);
 	border: 2px solid #ddd;
-	color: #fff;
+	color: #ddd;
 	padding: 40px 20px;
 }
 
