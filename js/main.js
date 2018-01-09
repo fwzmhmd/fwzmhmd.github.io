@@ -39,4 +39,8 @@ $(document).ready(function(){
     }
 
     window.onresize = showNav;
+
+    const $getYear = new Date();
+    $('footer').find('span').text($getYear.getFullYear() + " ");
+    
 });
