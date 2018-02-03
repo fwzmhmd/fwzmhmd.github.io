@@ -100,6 +100,26 @@ a {
     text-shadow: -4px 4px 0 #00CAB0;
 }
 
+.projects .mainHeadings::before {
+    height: 1px;
+    width: 70px;
+    content: '';
+    position: absolute;
+    background-color: #6E6E6E;
+    margin: 19px 20px;
+    left: 0;
+}
+
+.projects .mainHeadings::after {
+    height: 1px;
+    width: 70px;
+    content: '';
+    position: absolute;
+    background-color: #6E6E6E;
+    margin: 19px 20px;
+    right: 0;
+}
+
 /* Cards */
 
 .card {
@@ -174,6 +194,28 @@ a {
 
 /* skills */
 
+/* skills title */
+
+.skills .mainHeadings::before {
+    height: 1px;
+    width: 98px;
+    content: '';
+    position: absolute;
+    background-color: #6E6E6E;
+    margin: 19.5px 20px;
+    left: 0;
+}
+
+.skills .mainHeadings::after {
+    height: 1px;
+    width: 98.5px;
+    content: '';
+    position: absolute;
+    background-color: #6E6E6E;
+    margin: 19.5px 20px;
+    right: 0;
+}
+
 .skills {
     background-color: #fff;
     padding: 40px 0;
@@ -202,12 +244,39 @@ a {
     height: 7px;
 }
 
+.ui-design .loadingFill,
+.ux-design .loadingFill {
+    width: 80%;
+}
+
 .jquery .loadingFill,
 .javascript .loadingFill {
     width: 70%;
 }
 
 /* Contact */
+
+/* Contact title */
+
+.contact .mainHeadings::before {
+    height: 1px;
+    width: 74.5px;
+    content: '';
+    position: absolute;
+    background-color: #6E6E6E;
+    margin: 19.5px 20px;
+    left: 0;
+}
+
+.contact .mainHeadings::after {
+    height: 1px;
+    width: 74.5px;
+    content: '';
+    position: absolute;
+    background-color: #6E6E6E;
+    margin: 19.5px 20px;
+    right: 0;
+}
 
 .contact {
     padding: 40px 0;
