@@ -1,5 +1,11 @@
 const projects = [
     {
+        name: 'Drum Kit',
+        description: 'Virtual drum kit',
+        img_url: '300.png',
+        source: 'drum-kit'
+    },
+    {
         name: 'RSVP Event Management',
         description: 'RSVP app for event management',
         img_url: '300.png',
