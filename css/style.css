@@ -95,29 +95,9 @@ a {
     text-align: center;
     color: #4a4a4a;
     font-family: 'Avenir 400';
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 20px;
     text-shadow: -4px 4px 0 #00CAB0;
-}
-
-.projects .mainHeadings::before {
-    height: 1px;
-    width: 70px;
-    content: '';
-    position: absolute;
-    background-color: #6E6E6E;
-    margin: 19px 20px;
-    left: 0;
-}
-
-.projects .mainHeadings::after {
-    height: 1px;
-    width: 70px;
-    content: '';
-    position: absolute;
-    background-color: #6E6E6E;
-    margin: 19px 20px;
-    right: 0;
 }
 
 /* Cards */
@@ -138,20 +118,23 @@ a {
 
 .cardContent {
     padding: 20px;
-    min-height: 156px;
     width: 100%;
 }
 
-.card > .cardContent > .cardTitle {
+.card > .cardContent > .title {
     font-family: 'Avenir 300';
     font-size: 22px;
     margin-bottom: 10px;
 }
 
-.card > .cardContent > .cardDescription {
+.card > .cardContent > .description {
     font-family: 'Avenir';
     font-size: 18px;
-    margin-bottom: 30px;
+}
+
+.btnGroup {
+    width: 100%;
+    padding: 0 20px 20px;
 }
 
 .btnCont {
@@ -194,28 +177,6 @@ a {
 
 /* skills */
 
-/* skills title */
-
-.skills .mainHeadings::before {
-    height: 1px;
-    width: 98px;
-    content: '';
-    position: absolute;
-    background-color: #6E6E6E;
-    margin: 19.5px 20px;
-    left: 0;
-}
-
-.skills .mainHeadings::after {
-    height: 1px;
-    width: 98.5px;
-    content: '';
-    position: absolute;
-    background-color: #6E6E6E;
-    margin: 19.5px 20px;
-    right: 0;
-}
-
 .skills {
     background-color: #fff;
     padding: 40px 0;
@@ -257,26 +218,6 @@ a {
 /* Contact */
 
 /* Contact title */
-
-.contact .mainHeadings::before {
-    height: 1px;
-    width: 74.5px;
-    content: '';
-    position: absolute;
-    background-color: #6E6E6E;
-    margin: 19.5px 20px;
-    left: 0;
-}
-
-.contact .mainHeadings::after {
-    height: 1px;
-    width: 74.5px;
-    content: '';
-    position: absolute;
-    background-color: #6E6E6E;
-    margin: 19.5px 20px;
-    right: 0;
-}
 
 .contact {
     padding: 40px 0;
@@ -409,4 +350,38 @@ footer {
 
 .info > .credit {
     margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .subText > p {
+        width: 60%;
+    }
+
+    .projects .mainHeadings::before {
+        width: 266px;
+    }
+    
+    .projects .mainHeadings::after {
+        width: 270px;
+    }
+
+    .cardContainer:nth-of-type(2n + 2) {
+        padding-right: 10px;
+    }
+    
+    .cardContainer:nth-of-type(2n + 3) {
+        padding-left: 10px;
+    }
+
+    .cardContainer {
+        width: 50%;
+        float: left;
+    }
+
+    .cardContent {
+        min-height: 130px;
+    }
+
+    
+
 }
