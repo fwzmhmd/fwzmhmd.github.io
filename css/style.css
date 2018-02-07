@@ -358,11 +358,16 @@ footer {
 }
 
 .links > .icon {
-    width: 40px;
-    height: 40px;
+    width: 46px;
+    height: 46px;
     background-color: #00CAB0;
     border-radius: 100%;
     float: left;
+    padding: 10px 11px;
+}
+
+.links > .icon:last-child {
+    padding: 13px 11px;
 }
 
 .iconsContainer > .links > .icon:nth-of-type(1){
