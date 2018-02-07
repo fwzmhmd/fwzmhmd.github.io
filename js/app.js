@@ -38,7 +38,7 @@ for (let i = 0; i < projects.length; i++) {
     
     const btnCont2 = createElement('div', 'className', 'btnCont2');
     const source = createElement('a', 'className', 'btn btn-source');
-    source.textContent = 'source';
+    source.textContent = 'source code';
     source.target = '_blank';
     source.href = 'https://github.com/fwzmhmd/' + projects[i].source;
     btnCont2.appendChild(source);
