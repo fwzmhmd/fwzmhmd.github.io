@@ -64,8 +64,13 @@ a {
 }
 
 .navbar ul > li > a {
-    padding: 0 15px;
+    padding: 6px 15px;
     color: #ffffff;
+    display: block;
+}
+
+.navbar ul > li:last-child > a {
+    padding-right: 0;
 }
 
 /* About section */
@@ -415,7 +420,7 @@ footer {
 
 @media (min-width: 1024px) {
     body {
-        padding-top: 83px;
+        padding-top: 80px;
     }
 
     .navbar {
@@ -423,6 +428,15 @@ footer {
         width: 100%;
         top: 0;
         z-index: 100;
+    }
+
+    .navbarContainer .icon {
+        float: left;
+    }
+
+    .navbarContainer ul {
+        display: block;
+        float: right;
     }
 
     .container {
