@@ -320,6 +320,7 @@ input:focus {
     min-height: 36px;
     display: block;
     margin-bottom: 40px;
+    cursor: pointer;
 }
 
 .required {
@@ -485,6 +486,11 @@ footer {
     .skillsName {
         width: 620px;
         margin: 0 auto 20px;
+    }
+
+    .btn-send {
+        width: 180px;
+        margin: 0 auto;
     }
 
     .form {

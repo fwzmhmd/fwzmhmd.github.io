@@ -1,5 +1,17 @@
 const projects = [
     {
+        name: 'CSS Variables',
+        description: 'Playing with css variables',
+        img_url: '300.png',
+        source: 'css-variables'
+    },
+    {
+        name: 'Clock',
+        description: 'Rotatating clock written in JavaScript',
+        img_url: '300.png',
+        source: 'clock'
+    },
+    {
         name: 'Drum Kit',
         description: 'Virtual drum kit',
         img_url: '300.png',
