@@ -137,8 +137,8 @@ a {
 .card {
     background-color: #fff;
     margin-bottom: 20px;
-    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.35);
-
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+    border-radius: 4px;
 }
 
 .card img {
@@ -146,6 +146,8 @@ a {
     height: 220px;
     display: block;
     object-fit: cover;
+    border-radius: 4px 4px 0 0;
+    border-bottom: 1px solid #cecece;
 }
 
 .cardContent {
@@ -190,6 +192,7 @@ a {
     background-color: #ebebeb;
     display: inline-block;
     outline: none;
+    border-radius: 4px;
 }
 
 .btnCont > .btn,
@@ -230,11 +233,13 @@ a {
     width: 100%;
     background-color: #DDDDDD;
     height: 7px;
+    border-radius: 2px;
 }
 
 .loadingFill {
     background-color: #00CAB0;
     height: 7px;
+    border-radius: 2px;
 }
 
 .ui,
@@ -258,7 +263,8 @@ a {
 .form {
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.35);
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+    border-radius: 4px;
 }
 
 .form label {
@@ -284,6 +290,7 @@ textarea {
     outline: none;
     min-height: 36px;
     font-size: 14px;
+    border-radius: 4px;
 }
 
 textarea {
@@ -367,7 +374,7 @@ footer {
     width: 46px;
     height: 46px;
     background-color: #00CAB0;
-    border-radius: 100%;
+    border-radius: 4px;
     float: left;
     padding: 10px 11px;
 }
