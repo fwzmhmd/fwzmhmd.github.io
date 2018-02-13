@@ -46,3 +46,16 @@ for (var i = 0; i < projects.length; i++) {
     cardContainer.appendChild(card);
     projectsContainer.appendChild(cardContainer);
 }
+
+$(document).ready(function(){
+    $('a').on('click', function(e){
+        e.preventDefault();
+        
+        var offset = 80;
+        var target = this.hash;
+        if ($(this).data('offset') != undefined) offset = $(this).data('offset');
+        $('html, body').stop().animate({
+            'scrollTop': $(target).offset().top - offset
+        }, 800);
+    });
+});
