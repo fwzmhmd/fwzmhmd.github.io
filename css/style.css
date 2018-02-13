@@ -299,6 +299,7 @@ textarea {
     min-width: 100%;
     display: block;
     outline: none;
+    font-family: 'Avenir';
 }
 
 input:focus {
