@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/fonts.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Fawaz's Portfolio</title>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
     <!-- Navigation bar -->
@@ -117,7 +118,7 @@
         <div class="container">
             <div class="contactContainer">
                 <div class="mainHeadings">contact</div>
-                <form action="https://formspree.io/fwz.mhmd@gmail.com" method="POST" class="form">
+                <form action="https://formcarry.com/s/BJI33DEdM" method="POST" class="form" accept-charset="UTF-8">
                     <label>Name<span>*</span></label>
                     <input type="text" name="Name" required>
                     <label>Email<span>*</span></label>
@@ -128,7 +129,9 @@
                     <textarea class="textArea" name="Message" required></textarea>
                     <input type="hidden" name="_next" value="https://fwzmhmd.github.io" />
                     <input type="text" name="_gotcha" style="display:none" />
-                    <button type="submit" class="btn btn-send">send</button>
+                    <div class="g-recaptcha" data-sitekey="6LdapUkUAAAAACg34P20iA7LmFHAXcT8Af0X_Rep" data-callback="recaptchaCallback" data-expired-callback="expiredCap"></div>
+                    <button type="submit" class="btn btn-send" disabled>send</button>
+
 
                     <div class="required"><span>*</span>Required Fields</div>
                 </form>
