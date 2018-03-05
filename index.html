@@ -129,12 +129,13 @@
                     <textarea class="textArea" name="Message" required></textarea>
                     <input type="hidden" name="_next" value="https://fwzmhmd.github.io" />
                     <input type="text" name="_gotcha" style="display:none" />
-                    <div class="g-recaptcha" data-sitekey="6LdapUkUAAAAACg34P20iA7LmFHAXcT8Af0X_Rep" data-callback="recaptchaCallback" data-expired-callback="expiredCap"></div>
+                    <div class="g-recaptcha" data-sitekey="6LdapUkUAAAAACg34P20iA7LmFHAXcT8Af0X_Rep" data-callback="recaptchaCallback" data-expired-callback="resendSend"></div>
                     <button type="submit" class="btn btn-send" disabled>send</button>
 
 
                     <div class="required"><span>*</span>Required Fields</div>
                 </form>
+                <div class="message"></div>
             </div>
         </div>
     </div>

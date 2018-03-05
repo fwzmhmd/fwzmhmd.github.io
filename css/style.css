@@ -265,6 +265,7 @@ a {
     background-color: #fff;
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
     border-radius: 4px;
+    margin-bottom: 20px;
 }
 
 .form label {
@@ -341,6 +342,27 @@ input:focus {
     font-family: 'Avenir Italic';
     font-size: 14px;
 }
+
+/* Form Message */
+
+.message {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    border-left: 6px solid #00CAB0;
+    display: none;
+}
+
+.messageError {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    border-left: 6px solid #FF4A60;
+}
+
 
 /* Form Captcha */
 
@@ -514,7 +536,8 @@ footer {
         margin: 0 auto;
     }
 
-    .form {
+    .form,
+    .message {
         width: 620px;
         margin: 0 auto;
     }
