@@ -59,3 +59,35 @@ $(document).ready(function(){
         }, 800);
     });
 });
+
+function recaptchaCallback() {
+    $('.btn-send').removeAttr('disabled');
+};
+
+function resetSend() {
+    $('.btn-send').prop('disabled', true);
+};
+
+$(".form").submit(function (e) {
+    e.preventDefault();
+    var href = $(this).attr("action");
+    $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: href,
+        data: $(this).serialize(),
+        success: function (response) {
+            const successMsg = 'Thank You 😃. Your Message has been Sent.';
+            const errorMsg = 'An Error has Occured 😟. ' + response.message;
+
+            if (response.status == "success") {
+                $('.message').text(successMsg).fadeIn(800).delay(5000).fadeOut(800);
+                $('.form')[0].reset();
+            } else {
+                $('.message').text(errorMsg).removeClass('message').addClass('messageError').fadeIn(800).delay(5000).fadeOut(800);
+            }
+            grecaptcha.reset();
+            resetSend();
+        }
+    });
+});
