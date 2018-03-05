@@ -331,9 +331,22 @@ input:focus {
     cursor: pointer;
 }
 
+.btn-send:disabled {
+    background-color: #E9E9E9;
+    color: #909090;
+    cursor: not-allowed;
+}
+
 .required {
     font-family: 'Avenir Italic';
     font-size: 14px;
+}
+
+/* Form Captcha */
+
+.g-recaptcha > div {
+    width: 10px;
+    margin: 0 auto 20px;
 }
 
 /* footer */
