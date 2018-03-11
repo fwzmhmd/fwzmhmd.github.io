@@ -540,10 +540,14 @@ footer {
         margin: 0 auto;
     }
 
-    .form,
-    .message {
+    .form{
         width: 620px;
         margin: 0 auto;
+    }
+
+    .message {
+        width: 620px;
+        margin: 30px auto 0;
     }
 
     footer {
