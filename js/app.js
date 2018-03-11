@@ -48,7 +48,7 @@ for (var i = 0; i < projects.length; i++) {
 }
 
 $(document).ready(function(){
-    $('a').on('click', function(e){
+    $('.navbar a').on('click', function(e){
         e.preventDefault();
         
         var offset = 80;
